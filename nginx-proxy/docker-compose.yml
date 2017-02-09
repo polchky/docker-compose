@@ -1,0 +1,8 @@
+nginx-proxy:
+  image: theit8514/nginx-proxy-subdirectory
+  container_name: nginx-proxy
+  restart: always
+  ports:
+    - "80:80"
+  volumes:
+    - /var/run/docker.sock:/tmp/docker.sock:ro
